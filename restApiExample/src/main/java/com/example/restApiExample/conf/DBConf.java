@@ -33,10 +33,10 @@ public class DBConf {
     public DataSource dataSourceFotaLocal() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
-        dataSource.setUrl("jdbc:log4jdbc:mariadb://118.220.16.112:44444/fota?autoReconnect=true&useUnicode=true&characterEncoding=utf8");
+        dataSource.setUrl("jdbc:log4jdbc:mariadb://xxx.xxx.xxx.xxx:xxxxx/fota?autoReconnect=true&useUnicode=true&characterEncoding=utf8");
 //        dataSource.setUrl("jdbc:log4jdbc:mariadb://118.220.16.112:44444/test01?autoReconnect=true&useUnicode=true&characterEncoding=utf8");
-        dataSource.setUsername("quantum");
-        dataSource.setPassword("Vd!D7o@o0bfmgSekb2");
+        dataSource.setUsername("xxx");
+        dataSource.setPassword("xxx");
         dataSource.setMaxTotal(5);
         dataSource.setValidationQuery("select 1");
         dataSource.setTestWhileIdle(true);
