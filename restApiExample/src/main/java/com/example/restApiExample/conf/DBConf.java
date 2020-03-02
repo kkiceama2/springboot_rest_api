@@ -22,10 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
     ,sqlSessionFactoryRef="sqlSessionFactoryBasic"
     ,sqlSessionTemplateRef="sqlSessionTemplateBasic"
 )
-@EnableTransactionManagement(
-    //interface를 생성 하지 않고 class를 주입해도 되도록
-    proxyTargetClass = true
-)
+@EnableTransactionManagement
 public class DBConf {
 	
 	//@Primary
